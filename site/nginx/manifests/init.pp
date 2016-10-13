@@ -5,6 +5,12 @@ class nginx {
 	require	=> Yumrepo['updates'],
   }
   
+  File {
+	owner => 'root',
+	group => 'root',
+	mode = '0644',
+  }
+  
   file {'/var/www':
 	require => Package['nginx'],
 	ensure => directory,
