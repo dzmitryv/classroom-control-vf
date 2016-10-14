@@ -1,4 +1,4 @@
-define user::managed_user (
+define users::managed_user (
 	$homedir = "/home/${title}",
 	$password = 'test',
 	$shell = '/bin/bash',
