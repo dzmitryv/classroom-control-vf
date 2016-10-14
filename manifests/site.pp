@@ -43,4 +43,5 @@ node default {
 	# if $hypervisor != 'physical' {
 		# notify {"This is ${hypervisor} virtual machine":}
 	# }
+	notify {hiera('message', 'No message defined in Hiera'):}
 }
