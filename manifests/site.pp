@@ -41,6 +41,6 @@ ini_setting { 'random ordering':
 node default {
 	$hypervisor = capitalize(virtual())
 	if $hypervisor != 'physical' {
-		notify {"Tis is ${hypervisor} virtual machine"}
+		notify {"This is ${hypervisor} virtual machine":}
 	}
 }
