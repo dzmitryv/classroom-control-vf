@@ -1,3 +1,6 @@
 ---
 message: This message came from the common hiera datasource.
 
+:hierarchy:
+  - "%{clientcert}.yaml"
+  - common
