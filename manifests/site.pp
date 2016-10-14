@@ -39,4 +39,8 @@ ini_setting { 'random ordering':
 # specified in the console for that node.
 
 node default {
+	$hypervisor = capitalize(virtual())
+	if $hypervisor != 'physical' {
+		notify {"Tis is ${hypervisor} virtual machine"}
+	}
 }
